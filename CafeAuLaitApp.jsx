@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-<meta charset="utf-8">
-<title>Cafe Au Lait</title>
-<link rel="stylesheet" href="bootstrap.min.css">
-<link rel="stylesheet" href="kavezo.css">
+import React from 'react';
+import './bootstrap.min.css'; // Importálja a CSS fájlt.
+import './kavezo.css'; // Importálja a másik CSS fájlt.
 
-
-</head>
-<body class="bg">
-<div id="root"></div>
-
-<h1 class="cim1"><u><b>Cafe Au Lait<u></b></h1>
+function CafeAuLaitApp() {
+  return (
+    <html lang="hu">
+      <head>
+      <meta charset="utf-8">
+    <title>Cafe Au Lait</title>
+      </head>
+      <body>
+      <h1 class="cim1"><u><b>Cafe Au Lait<u></b></h1>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-secondary my-3">
 			<div class="" id="navbarNav">
 				<ul class="navbar-nav text-white">
@@ -113,7 +112,7 @@ Házi krémes<br><br></p>
 
 
 <h4 a id="elerhetosegek" href="elerhetosegek"><mark class="mark"><b>Elérhetőségek</b></a></mark></h4>
-  <img src="images/eler.jpg" alt="Elérhetőség" title="Elérhetőség" class="img-thumbnail">
+	<img src="eler.jpg" alt="Elérhetőség" title="Elérhetőség" class="img-thumbnail">	
 		<div class="text"> <b>E-mail:</b> dafelau.lait.gmail.com<br> <b>Telefon:</b>06 20 222 22  <br><b>Cím:</b> 9700,Szombathely Kaffé utca 4.</div>
 
 
@@ -133,6 +132,9 @@ Házi krémes<br><br></p>
 </div>
 
 </div>
-</body>
-</html>
+      </body>
+    </html>
+  );
+}
 
+export default CafeAuLaitApp;
